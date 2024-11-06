@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.36/build/spline-viewer.js"></script>
+
+    <!-- Primera sección ocupando el alto completo de la pantalla -->
+    <div class="content">
+        <spline-viewer url="https://prod.spline.design/aiitleRmQG7UCn2f/scene.splinecode"></spline-viewer>
+        <div class="title">
+            <h1>Te invito a mi Cumpleaños</h1>
+            <button class="btn" onclick="togglePlay()">PLAY</button>
+            <audio id="audio" src="./img/Jacobo Palacio @ThianMoreno , @Griimpa - RAKKETAZO.mp3"></audio>
+        </div>
+    </div>
+
+    <!-- Segunda sección (contenidos adicionales) -->
+    <div class="footer">
+        <h1>FELIPE GENES</h1>
+        <img src="./img/fotoFelipe.jpeg" alt="Felipe Genes">
+        <h2>Cumplo</h2>
+        <img src="./img/numero18.png" alt="18" class="img18">
+        <h2>Años</h2>
+        <br><br><br><br><br>
+        <h2>Acompañame a Celebrar</h2>
+        <br><br>
+        <h4>14 de Diciembre</h4>
+        <h4>Hora: 7pm</h4>
+        <br><br><br>
+        <h4>Ya Sabes Dónde <br>
+            Click↓</h4>
+        <a href="https://maps.app.goo.gl/oaU4fqK5pK8JqV7K8">
+            <div class="loader"></div>
+        </a>
+        <br><br><br>
+        <h2>Que no se te olvide el SOBRE CON LA MONEY ;)</h2>
+    </div>
+
+    <script>
+        const audio = document.getElementById("audio");
+
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                document.querySelector('.btn').innerText = 'PAUSE';
+            } else {
+                audio.pause();
+                document.querySelector('.btn').innerText = 'PLAY';
+            }
+        }
+    </script>
+
+    <script>
+        // JavaScript para activar animaciones en los elementos de la sección footer
+        document.addEventListener("DOMContentLoaded", function () {
+            const footerElements = document.querySelectorAll('.footer h1, .footer h2, .footer h4, .footer img, .footer .loader');
+
+            const options = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.2 // Cuando el 20% del elemento esté visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Añadir la clase de animación según el lado
+                        if (entry.target.tagName === 'IMG' || entry.target.classList.contains('loader')) {
+                            entry.target.classList.add('slide-in-right');
+                        } else {
+                            entry.target.classList.add('slide-in-left');
+                        }
+                        observer.unobserve(entry.target); // Dejar de observar el elemento una vez que se ha animado
+                    }
+                });
+            }, options);
+
+            footerElements.forEach(element => {
+                observer.observe(element); // Observar cada elemento en footer
+            });
+        });
+
+    </script>
+</body>
+
+</html>
