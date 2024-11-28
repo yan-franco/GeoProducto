@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>GeoProducto</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="./home.css">
@@ -13,13 +13,110 @@
 </head>
 
 <body>
-    
-    <div class="footer">
-        <img src="./img/Captura de pantalla 2024-11-08 130621.png" alt="Felipe Genes">
-        <a href="https://maps.app.goo.gl/arPcxwCiCbk7ipgL7"><div class="loader"></div></a>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="./img/geoproducto.gif" alt="Loading" class="loading-image">
     </div>
 
-    </script>
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <header>
+            <div id="location-container">
+                <span id="current-location">Detectando ubicación...</span>
+                <span id="arrow-down">&#9660;</span>
+            </div>
+        </header>
+        <main>
+            <div class="InputContainerSearch">
+                <input placeholder="Search" id="input" class="input" name="text" type="text" />
+
+                <label class="labelforsearch" for="input">
+                    <svg class="searchIcon" viewBox="0 0 512 512">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                        </path>
+                    </svg>
+                </label>
+            </div>
+
+            <!-- Slider Container -->
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide">
+                        <img src="./img/Bienvenido.webp" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/slide2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/slide3.jpg" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="slider-indicators">
+                    <div class="slider-indicator active"></div>
+                    <div class="slider-indicator"></div>
+                    <div class="slider-indicator"></div>
+                </div>
+            </div>
+
+            <!-- Small Images Section -->
+            <div class="small-images-container">
+                <div class="small-image-item" data-url="alimentos-y-bebidas">
+                    <img src="./img/Alimentos y Bebidas.webp" alt="Alimentos y Bebidas">
+                    <p>Alimentos y Bebidas</p>
+                </div>
+                <div class="small-image-item" data-url="tecnologia-y-electronica">
+                    <img src="./img/Tecnología y Electrónica.webp" alt="Tecnología y Electrónica">
+                    <p>Tecnología y Electrónica</p>
+                </div>
+                <div class="small-image-item" data-url="hogar-y-decoracion">
+                    <img src="./img/Hogar y Decoración.webp" alt="Hogar y Decoración">
+                    <p>Hogar y Decoración</p>
+                </div>
+                <div class="small-image-item" data-url="moda-y-accesorios">
+                    <img src="./img/Moda y Accesorios.webp" alt="Moda y Accesorios">
+                    <p>Moda y Accesorios</p>
+                </div>
+                <div class="small-image-item" data-url="salud-y-belleza">
+                    <img src="./img/Salud-y-Belleza.webp" alt="Salud y Belleza">
+                    <p>Salud y Belleza</p>
+                </div>
+                <div class="small-image-item" data-url="mascotas">
+                    <img src="./img/Mascotas.webp" alt="Mascotas">
+                    <p>Mascotas</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Popup Modal for Category -->
+    <div id="category-popup" class="hidden">
+        <div class="popup-content">
+            <h2 id="popup-title"></h2>
+            <div id="popup-body">
+                <!-- Espacio para más contenido -->
+            </div>
+            <button id="close-category-popup-btn">Cerrar</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Popup for Selecting Location -->
+    <div id="location-popup" class="hidden">
+        <div class="popup-content">
+            <h2>Seleccionar Ubicación</h2>
+            <input type="text" id="location-input" placeholder="Ingresa una ubicación">
+            <button id="save-location-btn">Guardar Ubicación</button>
+            <button id="close-popup-btn">Cancelar</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

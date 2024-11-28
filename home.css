@@ -1,116 +1,419 @@
-/* Reiniciar márgenes y padding para evitar espacios inesperados */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body,
-html {
+/* Loading Screen Styles */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-}
-
-.footer {
-    width: 100%;
-    height: 100vh;
-    /* Ocupa toda la altura de la pantalla */
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    /* Fondo opcional para evitar bordes blancos */
+    z-index: 9999;
 }
 
-.footer img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    /* Ajusta la imagen sin recortar partes */
+/* Static Image */
+.loading-image {
+    width: 500px;
+    /* Adjust the size as needed */
+    height: auto;
 }
 
-
-
-
-/* From Uiverse.io by Shoh2008 */
-.loader {
-    width: 48px;
-    height: 48px;
-    display: block;
-    margin: 20px auto;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.loader::after {
-    content: '';
-    width: 48px;
-    height: 48px;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    border-radius: 50% 50% 0;
-    border: 15px solid red;
-    transform: rotate(45deg) translate(0, 0);
-    box-sizing: border-box;
-    animation: animMarker 0.4s ease-in-out infinite alternate;
-}
-
-.loader::before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 150%;
-    width: 24px;
-    height: 4px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.2);
-    animation: animShadow 0.4s ease-in-out infinite alternate;
-}
-
-@keyframes animMarker {
-    0% {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    100% {
-        transform: rotate(45deg) translate(-5px, -5px);
-    }
-}
-
-@keyframes animShadow {
-    0% {
-        transform: scale(0.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.footer {
-    width: 100%;
-    height: 100vh;
+/* Header Styles */
+header {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#location-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#current-location {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#arrow-down {
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+/* Popup Styles */
+#location-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* Ensure the popup is hidden initially */
     justify-content: center;
     align-items: center;
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+    /* Utility class to hide elements */
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.popup-content input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#save-location-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#close-popup-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    padding: 20px;
+    gap: 20px; /* Espacio entre el search y el slider */
+}
+
+
+
+
+/* search */
+.InputContainerSearch {
+    height: 40px; /* Un poco más grande para mejor usabilidad */
+    width: 300px; /* Ajustar el tamaño para mayor comodidad */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+    margin-top: 10px;
+}
+
+.InputContainerSearch .input {
+    width: 170px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    caret-color: red;
+}
+
+.InputContainerSearch .labelforsearch {
+    cursor: text;
+    padding: 0px 12px;
+}
+
+.InputContainerSearch .searchIcon {
+    width: 13px;
+}
+
+.InputContainerSearch .border {
+    height: 40%;
+    width: 1.3px;
+    background-color: rgb(223, 223, 223);
+}
+
+.InputContainerSearch .micIcon {
+    width: 12px;
+}
+
+.InputContainerSearch .micButton {
+    padding: 0px 15px 0px 12px;
+    border: none;
+    background-color: transparent;
+    height: 40px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.InputContainerSearch .searchIcon path {
+    fill: rgb(114, 114, 114);
+}
+
+.InputContainerSearch .micIcon path {
+    fill: rgb(255, 81, 0);
+}
+
+.InputContainerSearch .micButton:hover {
+    background-color: rgb(255, 230, 230);
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+
+
+
+/* Slider Container */
+.slider-container {
     position: relative;
-    background-color: #000;
+    width: 90%; /* Alineado con el search */
+    max-width: 800px; /* Máximo ancho */
+    height: 180px;
+    overflow: hidden;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.footer img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+/* Slider Wrapper */
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
-/* Estilo y posicionamiento del ícono de ubicación */
-.loader {
+/* Slide */
+.slide {
+    min-width: 100%;
+    height: 180px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar imagen */
+    border-radius: 20px;
+}
+
+/* Indicators */
+.slider-indicators {
     position: absolute;
-    bottom: 20%;
-    left: 90px;
+    bottom: 10px;
+    left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.slider-indicator {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-indicator.active {
+    background-color: #007bff;
+}
+
+
+
+
+
+/* imagenes pequeñas */
+.small-images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 15px; /* Espacio entre elementos */
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.small-image-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-image-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5%; /* Hacer las imágenes redondas */
+    object-fit: cover; /* Ajustar contenido */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 8px;
+}
+
+.small-image-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* Popup Modal */
+#category-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#category-popup .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#category-popup h2 {
+    margin-bottom: 10px;
+}
+
+#category-popup #popup-body {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+#close-popup-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#category-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto inicialmente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden; /* Evitar que el modal completo tenga scroll */
+}
+
+#category-popup .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    max-height: 80%; /* Límite de altura del modal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Habilitar scroll vertical si el contenido supera el límite */
+}
+
+
+
+
+/* Card Container */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px; /* Ajusta según sea necesario */
+}
+
+/* Image */
+.card-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Content */
+.card-content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    margin-right: 10px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+/* Button */
+.card-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
 }
