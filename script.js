@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const sliderWrapper = document.querySelector(".slider-wrapper");
     const indicators = document.querySelectorAll(".slider-indicator");
+    
 
     const GOOGLE_API_KEY = "AIzaSyC_GvKA4NfGVIKSYhLLQ11e3FjC6HvIDp4"; // Reemplaza con tu clave de API
 
@@ -118,49 +119,49 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="card-content">
                         <h3 class="card-title">Cardamomo</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Harina de almendra</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Té pu-erh chino</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Cacao al 100%</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Queso gouda añejo</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">cervezas importadas</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Mangostán</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
             `
         },
@@ -172,28 +173,28 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="card-content">
                         <h3 class="card-title">Sensores para proyectos de robótica</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+de+tecnología+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Fundas para dispositivos menos populares</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+de+tecnología+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">cables de consolas retro</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+de+tecnología+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Cartuchos de impresoras descontinuadas</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=tiendas+de+tecnología+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
             `
         },
@@ -205,21 +206,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="card-content">
                         <h3 class="card-title">Mesas hechas de madera reciclada</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=decoración+para+el+hogar+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Lámparas retro</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=decoración+para+el+hogar+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">lino importado</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=decoración+para+el+hogar+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
             `
         },
@@ -231,21 +232,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="card-content">
                         <h3 class="card-title">Zapatos o ropa de diseño único</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=moda+y+accesorios+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">cinturones con diseños exclusivos</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=moda+y+accesorios+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">piedras preciosas únicas</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=moda+y+accesorios+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
             `
         },
@@ -257,21 +258,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="card-content">
                         <h3 class="card-title">Productos dermatológicos especializados</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=salud+y+belleza+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Maquillaje libre de crueldad animal</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=salud+y+belleza+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Suplementos alimenticios especializados</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=salud+y+belleza+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
             `
         },
@@ -283,14 +284,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="card-content">
                         <h3 class="card-title">Comidas premium o de prescripción veterinaria</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=veterinarias+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
                     <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">juguetes interactivos importados</h3>
                     </div>
-                    <button class="card-button">Buscar</button>
+                    <a href="https://www.google.com/maps/search/?api=1&query=veterinarias+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
             `
         }
@@ -315,3 +316,4 @@ document.addEventListener("DOMContentLoaded", () => {
         categoryPopup.style.display = "none"; // Ocultar el popup
     });
 });
+
