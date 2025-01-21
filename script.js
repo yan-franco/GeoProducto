@@ -115,49 +115,49 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Alimentos y Bebidas",
             body: `
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/cadamomo.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Cardamomo</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/harina-de-almendra.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Harina de almendra</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/te-pu-erh-chino.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Té pu-erh chino</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/cacao-100_.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Cacao al 100%</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/queso-añejo.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Queso gouda añejo</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/cerveza-importada.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">cervezas importadas</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+naturistas+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/mangostan.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Mangostán</h3>
                     </div>
@@ -169,28 +169,28 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Tecnología y Electrónica",
             body: `
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/sensores robotica.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Sensores para proyectos de robótica</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+de+tecnología+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/funda.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Fundas para dispositivos menos populares</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+de+tecnología+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/cables de consolas retro.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">cables de consolas retro</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=tiendas+de+tecnología+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/cartuchos.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Cartuchos de impresoras descontinuadas</h3>
                     </div>
@@ -202,21 +202,21 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Hogar y Decoración",
             body: `
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/mesa de madera reciclaje.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Mesas hechas de madera reciclada</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=decoración+para+el+hogar+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/lampara retro.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Lámparas retro</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=decoración+para+el+hogar+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/tela.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">lino importado</h3>
                     </div>
@@ -228,21 +228,21 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Moda y Accesorios",
             body: `
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/zapatos o ropa diseño unico.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Zapatos o ropa de diseño único</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=moda+y+accesorios+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/cinturones.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">cinturones con diseños exclusivos</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=moda+y+accesorios+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/piedras unicas.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">piedras preciosas únicas</h3>
                     </div>
@@ -254,21 +254,21 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Salud y Belleza",
             body: `
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/producto dermatologico.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Productos dermatológicos especializados</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=salud+y+belleza+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/maquillaje.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Maquillaje libre de crueldad animal</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=salud+y+belleza+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/alimentos alimenticios.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Suplementos alimenticios especializados</h3>
                     </div>
@@ -280,14 +280,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Mascotas",
             body: `
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/comida animal.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Comidas premium o de prescripción veterinaria</h3>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=veterinarias+cerca+de+mi"><button class="card-button">Buscar</button></a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/80" alt="Producto" class="card-image">
+                    <img src='./img/productos/juguetes mascotas.webp' alt="Producto" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">juguetes interactivos importados</h3>
                     </div>
